@@ -1,0 +1,9 @@
+FROM arm32v7/debian:stretch-slim
+
+EXPOSE 80
+
+WORKDIR /app
+
+COPY main-arm /app
+
+CMD ["./main-arm"]
